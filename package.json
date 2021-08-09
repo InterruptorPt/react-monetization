@@ -2,7 +2,7 @@
   "name": "@interruptor/react-monetization",
   "version": "0.1.0",
   "license": "MIT",
-  "module": "dist/@interruptor/react-monetization.esm.js",
+  "module": "dist/react-monetization.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -19,12 +19,16 @@
     "lint": "eslint src --ext js,ts,tsx --fix",
     "prepare": "tsdx build && husky install",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "react": ">=16"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@semantic-release/git": "^9.0.0",
     "@size-limit/preset-small-lib": "^5.0.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -50,6 +54,7 @@
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "semantic-release": "^17.4.4",
     "size-limit": "^5.0.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.0",
@@ -61,11 +66,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/@interruptor/react-monetization.cjs.production.min.js",
+      "path": "dist/react-monetization.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/@interruptor/react-monetization.esm.js",
+      "path": "dist/react-monetization.esm.js",
       "limit": "10 KB"
     }
   ]
