@@ -39,3 +39,8 @@ blocks:
           - checkout
           - nvm use
           - cache restore
+promotions:
+  - name: Publish the package
+    pipeline_file: publish.yml
+    auto_promote:
+      when: branch = 'main' AND result = 'passed'

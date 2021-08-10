@@ -1,0 +1,23 @@
+version: v1.0
+name: Publish the package
+blocks:
+  - name: Run semantic-release
+    task:
+      secrets:
+        - name: NPM CI token
+        - name: GitHub token
+      jobs:
+        - name: Semantic Release
+          commands:
+            - npx --no-install semantic-release
+      prologue:
+        commands:
+          - checkout
+          - nvm use
+          - cache restore
+          - cache restore build-cache
+          - cache restore build-result
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804

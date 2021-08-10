@@ -64,6 +64,9 @@
     "src/**/*.{js,jsx,ts,tsx}": "eslint --fix --quiet",
     "*.{json,yml,graphql}": "prettier --write"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "size-limit": [
     {
       "path": "dist/react-monetization.cjs.production.min.js",
