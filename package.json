@@ -1,6 +1,7 @@
 {
   "name": "@interruptor/react-monetization",
   "version": "1.0.0",
+  "description": "A React library for tracking Web Monetization state",
   "license": "MIT",
   "module": "dist/react-monetization.esm.js",
   "main": "dist/index.js",
