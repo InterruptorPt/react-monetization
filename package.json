@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "A React library for tracking Web Monetization state",
   "license": "MIT",
+  "homepage": "https://github.com/InterruptorPt/react-monetization",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InterruptorPt/react-monetization.git"
+  },
+  "bugs": "https://github.com/InterruptorPt/react-monetization/issues",
   "module": "dist/react-monetization.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
