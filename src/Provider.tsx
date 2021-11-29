@@ -24,7 +24,7 @@ export const WebMonetizationProvider: React.FC = ({ children }) => {
     return () => {
       events.forEach((removeListener) => removeListener())
     }
-  }, [setState])
+  }, [])
 
   return (
     <WebMonetizationContext.Provider
