@@ -4,7 +4,13 @@ import React, { useEffect, useState } from 'react'
 import { WebMonetizationContext } from './context'
 import { addMonetizationEventListener } from './utils/addMonetizationEventListener'
 
-export const WebMonetizationProvider: React.FC = ({ children }) => {
+type WebMonetizationProviderProps = {
+  children: React.ReactNode
+}
+
+export const WebMonetizationProvider = ({
+  children,
+}: WebMonetizationProviderProps): JSX.Element => {
   const [state, setState] = useState<MonetizationState>('pending')
 
   useEffect(() => {
