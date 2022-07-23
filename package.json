@@ -1,6 +1,6 @@
 {
   "name": "@interruptor/react-monetization",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A React library for tracking Web Monetization state",
   "license": "MIT",
   "homepage": "https://github.com/InterruptorPt/react-monetization",
